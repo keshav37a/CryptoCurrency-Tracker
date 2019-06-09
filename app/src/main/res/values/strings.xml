@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">0052CryptoApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="currency_array">
+        <item>BTC</item>
+        <item>XRP</item>
+        <item>ETH</item>
+        <item>EOS</item>
+        <item>BCH</item>
+        <item>LTC</item>
+        <item>BNB</item>
+        <item>USDT</item>
+        <item>XLM</item>
+        <item>ADA</item>
+        <item>TRX</item>
+        <item>HT</item>
+        <item>XMR</item>
+        <item>MXM</item>
+        <item>IOT</item>
+        <item>ONT</item>
+        <item>USD</item>
+        <item>EUR</item>
+    </string-array>
+
+</resources>

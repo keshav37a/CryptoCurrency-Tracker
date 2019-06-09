@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CryptoDetails">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+        <ImageButton android:id="@+id/btnBack"
+                     android:layout_width="30dp"
+                     android:layout_height="30dp"
+                     android:background="#FAFAFA"
+                     android:src="@drawable/ic_arrow_back_black_24dp"
+                     android:textSize="20sp"
+                     android:text="back"/>
+
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+            <ImageView android:id="@+id/imgViewLogoDetails"
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:layout_margin="5dp" />
+
+            <TextView android:id="@+id/tvNameDetails"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="20sp"
+                      android:textStyle="bold"
+                      android:layout_toRightOf="@+id/imgViewLogoDetails"
+                      android:text="BTC"
+                      android:layout_marginTop="5dp"
+                      android:layout_marginLeft="5dp"
+                      android:layout_marginRight="5dp"  />
+
+            <TextView android:id="@+id/tvFullNameDetails"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="14sp"
+                      android:layout_below="@+id/tvNameDetails"
+                      android:layout_toRightOf="@+id/imgViewLogoDetails"
+                      android:text="Bitcoin"
+                      android:layout_marginBottom="5dp"
+                      android:layout_marginLeft="5dp"
+                      android:layout_marginRight="5dp"  />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayoutDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill">
+
+    </android.support.design.widget.TabLayout>
+
+
+    <FrameLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:orientation="vertical"
+                  android:layout_weight="2"  >
+
+        <android.support.v4.view.ViewPager
+                android:id="@+id/viewPagerDetailsUpper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+    </FrameLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:orientation="vertical"
+                 android:layout_weight="1.1"  >
+
+        <TextView android:id="@+id/tvPriceCryptoDetails"
+                  android:layout_width="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:textSize="16sp"
+                  android:text="$0000"
+                  android:layout_height="wrap_content"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"  >
+
+            <TextView android:id="@+id/tvFromSymbolCryptoDetails"
+                      android:layout_width="wrap_content"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginBottom="10dp"
+                      android:textSize="16sp"
+                      android:text="BTC"
+                      android:layout_height="wrap_content"/>
+
+            <TextView android:id="@+id/tvToSymbolCryptoDetails"
+                      android:layout_width="wrap_content"
+                      android:layout_marginRight="10dp"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginBottom="10dp"
+                      android:textSize="16sp"
+                      android:text="USD"
+                      android:layout_height="wrap_content"/>
+
+            <TextView android:id="@+id/tvLastUpdatedCryptoDetails"
+                      android:layout_width="match_parent"
+                      android:gravity="right"
+                      android:layout_margin="10dp"
+                      android:textSize="16sp"
+                      android:text="2:30PM"
+                      android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"  >
+
+            <TextView android:id="@+id/tvMktCapCryptoDetails"
+                      android:text="Market Cap"
+                      android:layout_margin="10dp"
+                      android:textSize="16sp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+
+            <TextView android:id="@+id/tvMktCapValueCryptoDetails"
+                      android:text="11111111111"
+                      android:gravity="right"
+                      android:layout_margin="10dp"
+                      android:textSize="16sp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"  >
+
+            <TextView android:id="@+id/tvVolCryptoDetails"
+                      android:text="Volume"
+                      android:layout_margin="10dp"
+                      android:textSize="16sp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+
+            <TextView android:id="@+id/tvVolumeValueCryptoDetails"
+                      android:text="11111111111"
+                      android:gravity="right"
+                      android:layout_margin="10dp"
+                      android:textSize="16sp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"  >
+
+            <TextView android:id="@+id/tvSupplyCryptoDetails"
+                      android:text="Supply"
+                      android:layout_margin="10dp"
+                      android:textSize="16sp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+
+            <TextView android:id="@+id/tvSupplyValueCryptoDetails"
+                      android:text="11111111111"
+                      android:gravity="right"
+                      android:layout_margin="10dp"
+                      android:textSize="16sp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/SortByName"
+          android:orderInCategory="100"
+          android:title="A-Z"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/SortByPrice"
+          android:orderInCategory="100"
+          android:title="Prc"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/SortByMarketCap"
+          android:orderInCategory="100"
+          android:title="Mkt"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/SortByVolume"
+          android:orderInCategory="100"
+          android:title="Vol"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/SortByPercentage1H"
+          android:orderInCategory="100"
+          android:title="%1H"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/SortByPercentage24H"
+          android:orderInCategory="100"
+          android:title="%24H"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/SortBySupply"
+          android:orderInCategory="100"
+          android:title="Sup"
+          app:showAsAction="always"/>
+</menu>
